@@ -6,3 +6,7 @@
 body {
     @apply /*font-lexend */font-nunito;
 }
+h2 {
+    @apply font-semibold text-black text-2xl leading-normal lg:leading-normal md:text-3xl;
+}
+

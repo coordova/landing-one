@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Tiny slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+    
     <title>Landing One</title>
 </head>
 <body>
@@ -155,7 +159,7 @@
                                         <label class="font-medium">Your Name : <span class="text-red-600">*</span></label>
                                         <div class="relative mt-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user w-4 h-4 absolute top-3 left-4"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                                            <input type="text" class="px-6 py-2 pl-12 w-max border border-gray-200 rounded-md focus:outline-none focus:ring-1 focus:ring-indigo-600" placeholder="Name" name="name" required="">
+                                            <input type="text" class="px-6 py-2 pl-12  border border-gray-200 rounded-md focus:outline-none focus:ring-1 focus:ring-indigo-600" placeholder="Name" name="name" required="">
                                         </div>
                                     </div>
                                     <!-- Your Email field -->
@@ -163,7 +167,7 @@
                                         <label class="font-medium">Your Email : <span class="text-red-600">*</span></label>
                                         <div class="relative mt-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail w-4 h-4 absolute top-3 left-4"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                                            <input type="text" class="px-6 py-2 pl-12 w-max border border-gray-200 rounded-md focus:outline-none focus:ring-1 focus:ring-indigo-600" placeholder="Email" name="email" required="">
+                                            <input type="text" class="px-6 py-2 pl-12  border border-gray-200 rounded-md focus:outline-none focus:ring-1 focus:ring-indigo-600" placeholder="Email" name="email" required="">
                                         </div>
                                     </div>
                                     <!-- Your Password field -->
@@ -171,7 +175,7 @@
                                         <label class="font-medium">Enter Password : <span class="text-red-600">*</span></label>
                                         <div class="relative mt-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-key w-4 h-4 absolute top-3 left-4"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path></svg>
-                                            <input type="password" class="px-6 py-2 pl-12 w-max border border-gray-200 rounded-md focus:outline-none focus:ring-1 focus:ring-indigo-600" placeholder="Password" name="password" required="">
+                                            <input type="password" class="px-6 py-2 pl-12 border border-gray-200 rounded-md focus:outline-none focus:ring-1 focus:ring-indigo-600" placeholder="Password" name="password" required="">
                                         </div>
                                     </div>
                                     <!-- Submit Button -->
@@ -186,5 +190,85 @@
             </div>
         </div>
     </section>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24">
+        <!-- Container -->
+        <div class="container">
+            <!-- Title & Description -->
+            <div class="flex flex-col space-y-6 text-center">
+                <h6 class="font-medium text-indigo-600">
+                    We believe in building each other and hence
+                </h6>
+                <h3 class="font-semibold text-black text-3xl">
+                    Work with some amazing partners
+                </h3>
+                <p class="max-w-lg mx-auto text-gray-400">
+                    Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect.
+                </p>
+                <!-- slider - tiny slider - https://github.com/ganlanyuan/tiny-slider -->
+                <!-- Container -->
+                <div class="py-16 flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
+                    <!-- Card 1 container -->
+                    <figure class="md:flex rounded-xl p-8 md:p-0 border-gray-100 shadow md:w-1/2">
+                        <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto md:rounded-l-xl" src="assets/images/client/04.jpg" alt="pic" width="384" height="512">
+                        <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                            <blockquote>
+                                <p class="text-slate-400 font-medium">
+                                    "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century."
+                                </p>
+                            </blockquote>
+                            <figcaption class="font-medium">
+                                <div class="text-indigo-600">
+                                    Barbara McIntosh
+                                </div>
+                                <div class="text-sm text-slate-400">
+                                    Staff Engineer, Algolia
+                                </div>
+                            </figcaption>
+                            
+                        </div>
+                    </figure>
+                        
+                    <!-- Card 2 -->
+                    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 border-gray-100 shadow md:w-1/2">
+                        <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto md:rounded-l-xl" src="assets/images/client/01.jpg" alt="pic" width="384" height="512">
+                        <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                            <blockquote>
+                                <p class="text-lg font-medium">
+                                    “Tailwind CSS is the only framework that I've seen scale
+                                    on large teams. It’s easy to customize, adapts to any design,
+                                    and the build size is tiny.”
+                                </p>
+                            </blockquote>
+                            <figcaption class="font-medium">
+                                <div class="text-sky-500">
+                                    Sarah Dayan
+                                </div>
+                                <div class="text-slate-700">
+                                    Staff Engineer, Algolia
+                                </div>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+    <script type="module">
+        // import {tns} from './src/tiny-slider.js';
+
+        var slider = tns({
+            container: '.my-slider',
+            items: 6,
+            slideBy: 'page',
+            autoplay: true
+        });
+    </script>
 </body>
 </html>
